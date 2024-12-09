@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+</head>
+<style>
+    body{
+        background-color: #D9C7A3;
+        margin: 100px;
+    }
+     .container {
+	display: flex;
+	justify-content: center;
+	width: 35em;
+	background:white;
+	box-shadow: 5px 5px 15px navy;
+	border-radius: 10px;
+	padding: 20px;
+	max-width: 600px;
+	margin: auto;
+}
+p {
+	font-size: 0.6em;
+	color: rgba(190,147,147,1.00);
+	letter-spacing: 1px;
+}
+.images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+	}
+	 .imahe {
+		width: 100%;
+		 height: 100%;
+		 border-radius: 5px;
+		 margin-right: 20px;
+	}
+    .slideshow-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.slideshow-buttons span {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background:blue;
+}
+.pick{
+	text-transform:uppercase;
+	font-size: 10px;
+}
+.sizes{
+	display: flex;
+	justify-content: flex-start;
+	column-gap:10px;
+	flex-wrap: wrap;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.size{
+	border: none;
+	width: 40px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 15px;
+	transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.size:hover{
+	background: burlywood;
+	color: white;
+	transform: scale(1.1)
+}
+.product{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 20px;
+}
+#p{
+	text-transform: uppercase;
+}
+.par2{
+	font-size: 15px;
+}
+.description {
+	text-transform: none;
+	letter-spacing: 5;
+	margin-bottom: 17px;
+	color: rgba(20,16,16,1.00);
+	font-size: 0.7em;
+	line-height: 1.6em;
+	text-align: justify;
+}
+.buttons{
+	padding: 1px;
+	display: flex;
+	outline: 0;
+	border: 0;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	color: white;
+	cursor: pointer;	
+}
+.buttons:hover{
+	transition: all 0.4s ease-in-out;
+}
+.add{
+	width: 150px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-transform: uppercase;
+	background-color: burlywood;
+}
+.back{
+	width: 50px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-transform: uppercase;
+text-transform: uppercase;
+background-color: #D9C7A3;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="images">
+            <img alt="" src="c:\Users\admin\Pictures\oppo-a85-pakistan-priceoye-3dqtw.jpg" class="imahe">
+            <div class="slideshow-buttons">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="pick"></p>Available Storage
+            <div class="sizes">
+			    <span class="size">32gb</span>
+                <span class="size">64gb</span>
+                <span class="size">128gb</span>
+				<span class="size">256gb</span>
+            </div>
+        </div>
+        <div class="product">
+            <p class="par2">OPPO A85</p>
+            <h3>Php10,000.00</h3>
+            <p class="description">The Oppo A85 will have octa-core CPU, clocked at 2.5 GHz, paired with 4 GB RAM on the chipset. There is also 32 GB internal storage and a slot for microSD for up to 256 GB more.
+				While the primary camera is 13 MP and coupled with an LED flash, the front one is just 8 MP..
+            </p>
+            <div class="buttons">
+                <button class="add">Add to Cart</button>
+                <a href="PRODUKTO.html"><button class="back">Back</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

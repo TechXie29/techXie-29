@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: #D9C7A3;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    header .heroh1span {
+        color: #ffd700;
+    }
+
+    header .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: wheat;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    header .btn:hover {
+        background: #333;
+        color: palevioletred;
+        transform: scale(1.1);
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+     a:hover {
+        color:#D9C7A3;
+        background-color: #333;
+    }
+
+    .section {
+        padding: 60px 30px;
+        border-radius: 15px;
+        text-align: center;
+        background: #D9C7A3;
+        margin: 30px 0;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: slideln 1s ease-in-out forwards;
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        background: burlywood;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow o.3s ease;
+        width: 300px;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeln {
+        from {
+            opacity: 0;
+            transform: translateY(-3opx);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(o);
+        }
+    }
+
+    @keyframes slideln {
+        from {
+            opacity: 0;
+            transform: translateY(3opx);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(o);
+        }
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media(max-width:768px) {
+        .project {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .project-card {
+        width: 97%;
+    }
+
+    section slide-in {
+        background-color:#846342;
+        padding: 20%;
+    }
+
+    .contact {
+        background-color: burlywood;
+        border-radius: 15px;
+
+    }
+
+    nav {
+        background: #846342;
+        padding: 8px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #D6D0C2;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .nav a:hover {
+        transform: scale(1.3);
+        background-color:burlywood;
+        color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="hero">
+            <h1>WELCOME TO TREXIE PHONES STORE</h1>
+            <h3c lass="fade-in">Hello I'm
+                <span>TREXIE MAE</span>
+            </h3>
+            <p class="fade-in">I'm a Web Developer and designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="HOMIES.html">Home</a>
+            <a href="PRODUKTO.html">Product</a>
+            <a href="contactinporfolio.html">Contact</a>
+        </ul>
+    </nav>
+    <section id="about" class="section slide-in">
+        <h2>ABOUT US</h2>
+        <div class="project-card hover-grow">
+        <p>Welcome to TREXIE PHONE STORE here you will find certified
+            pre-owned devices at prices you will love .</p>
+    </section>
+
+    <section id="projects" class="section slide-in">
+        <div class="projects">
+            <div class="project-card hover-grow">
+                <h3>OUR MISSION</h3>
+                <p>To transform smart device owneship-by maximising
+                    affordability and minimising ewaste.</p>
+            <h3>OUR VISION</h3>
+            <center>
+                <p>A clean,well connected tomorrow</p>.</p>
+            </center>
+          
+        </div>
+    </section>
+
+    <section id class="contact" class="section slide-in">
+        <center>
+            <h2>Contact Me</h2>
+        </center>
+        <center>
+            <p>Email:trexie2005@example.com</p>
+        </center>
+        <center>
+            <p>Phone:09221232526</p>
+        </center>
+       <center><p>Facebook:Trexie Dump Gadiano</p></center>
+    </section>
+
+    <footer>
+        <p>TREX PHONESHOP@2024.All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
